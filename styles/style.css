@@ -49,15 +49,21 @@ h2 {
   z-index: 2;
 }
 .header__video-block {
-  width: 690px;
-  background: url("../img/header.png") no-repeat;
+  width: 950px;
+  background: url("../img/header.png") no-repeat center black;
+  background-size: cover;
   height: 100%;
 }
 .header__nav {
-  padding: 0 57px;
+  padding: 73px 57px;
   background: #415167;
+  width: 274px;
 }
-.header__nav li {
+.header__nav ul {
+  display: grid;
+  grid-row-gap: 20px;
+}
+.header__nav ul li {
   color: white;
 }
 

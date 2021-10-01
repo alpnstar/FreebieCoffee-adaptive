@@ -41,15 +41,21 @@ h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family
         }
     }
     &__video-block {
-        width: 690px;
-        background: url('../img/header.png') no-repeat ;
+        width: 950px;
+        background: url('../img/header.png') no-repeat center    black ;
+        background-size: cover;
         height: 100%;
     }
     &__nav {
-        padding: 0 57px;
+        padding: 73px 57px;
         background: $primary;
-        li {
-            color: white;
+        width: 274px;
+        ul {
+            display: grid;
+            grid-row-gap: 20px;
+            li {
+                color: white;
+            }
         }
     }
 }
