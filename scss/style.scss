@@ -13,6 +13,7 @@ body {
     box-sizing: border-box;
     font-family: Nunito;
     color: $primary;
+    outline: none;
 }
 h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family: 'Montserrat';}
 
@@ -33,28 +34,36 @@ h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family
         }
     }
     &__main {
+        width: 100%;
         display: flex;
         &-block {
             padding: 73px 187px;
-            max-width: 442px;
+            width: 23%;
             z-index: 2;
         }
     }
     &__video-block {
-        width: 950px;
-        background: url('../img/header.png') no-repeat center    black ;
+        width: 100%;
+        background: url('../img/header.png') no-repeat center gray;
         background-size: cover;
         height: 100%;
     }
+    .cart-icon {
+        margin-bottom: 123px;
+    }
     &__nav {
+        width: 23%;
         padding: 73px 57px;
         background: $primary;
-        width: 274px;
         ul {
             display: grid;
             grid-row-gap: 20px;
             li {
                 color: white;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
             }
         }
     }

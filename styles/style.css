@@ -13,6 +13,7 @@ body {
   box-sizing: border-box;
   font-family: Nunito;
   color: #415167;
+  outline: none;
 }
 
 h1 {
@@ -41,23 +42,27 @@ h2 {
   color: white;
 }
 .header__main {
+  width: 100%;
   display: flex;
 }
 .header__main-block {
   padding: 73px 187px;
-  max-width: 442px;
+  width: 23%;
   z-index: 2;
 }
 .header__video-block {
-  width: 950px;
-  background: url("../img/header.png") no-repeat center black;
+  width: 100%;
+  background: url("../img/header.png") no-repeat center gray;
   background-size: cover;
   height: 100%;
 }
+.header .cart-icon {
+  margin-bottom: 123px;
+}
 .header__nav {
+  width: 23%;
   padding: 73px 57px;
   background: #415167;
-  width: 274px;
 }
 .header__nav ul {
   display: grid;
@@ -65,6 +70,10 @@ h2 {
 }
 .header__nav ul li {
   color: white;
+}
+.header__nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
