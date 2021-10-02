@@ -26,6 +26,19 @@ h2 {
   font-family: "Montserrat";
 }
 
+.head {
+  display: block;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+
+.subhead {
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .header {
   position: relative;
   height: 770px;
@@ -55,6 +68,9 @@ h2 {
   background: url("../img/header.png") no-repeat center gray;
   background-size: cover;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header .cart-icon {
   margin-bottom: 123px;
@@ -74,6 +90,31 @@ h2 {
 .header__nav ul li a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s;
+}
+.header__nav ul li a:hover {
+  transition: color 0.3s;
+  color: orange;
+}
+
+.features {
+  padding: 87px 0 120px 0;
+}
+.features__wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  text-align: center;
+}
+.features__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(226px, auto));
+  grid-gap: 20px;
+}
+.features__item-inner {
+  max-width: 226px;
+}
+.features__item-inner h3 {
+  margin: 30px 0 13px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

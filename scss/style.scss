@@ -16,7 +16,8 @@ body {
     outline: none;
 }
 h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family: 'Montserrat';}
-
+.head {display:block;font-family: 'Montserrat'; font-weight: 900; font-size: 30px; margin-bottom: 80px;}
+.subhead {font-weight: 600; font-size: 20px;}
 .header {
     position: relative;
     height: 770px;
@@ -47,6 +48,9 @@ h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family
         background: url('../img/header.png') no-repeat center gray;
         background-size: cover;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .cart-icon {
         margin-bottom: 123px;
@@ -63,7 +67,34 @@ h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family
                 a {
                     color: white;
                     text-decoration: none;
+                    transition: color 0.3s;
+                    &:hover {
+                        transition: color 0.3s;
+                        color: orange;
+                    }
                 }
+            }
+        }
+    }
+}
+.features {
+    padding: 87px 0 120px 0;
+    &__wrapper {
+        max-width: 1110px;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(226px,auto));
+        grid-gap: 20px;
+    }
+    &__item {
+        &-inner {
+            max-width: 226px;
+            h3 {
+                margin: 30px 0 13px 0;
             }
         }
     }
