@@ -40,7 +40,6 @@ h2 {
 }
 
 .header {
-  position: relative;
   height: 770px;
   display: flex;
 }
@@ -48,7 +47,7 @@ h2 {
   text-transform: uppercase;
   line-height: 70px;
   position: relative;
-  top: 65%;
+  bottom: -65%;
 }
 .header__text--gold {
   background-color: #C7A17A;
@@ -59,18 +58,18 @@ h2 {
   display: flex;
 }
 .header__main-block {
-  padding: 73px 187px;
-  width: 23%;
-  z-index: 2;
+  width: 30%;
 }
 .header__video-block {
   width: 100%;
   background: url("../img/header.png") no-repeat center gray;
   background-size: cover;
+  padding: 73px 0;
+}
+.header__video-block-inner {
+  position: relative;
+  right: 20%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .header .cart-icon {
   margin-bottom: 123px;
@@ -115,6 +114,46 @@ h2 {
 }
 .features__item-inner h3 {
   margin: 30px 0 13px 0;
+}
+
+@media screen and (max-width: 1035px) {
+  .header__main-block {
+    padding: 30px;
+    position: relative;
+  }
+  .header__nav {
+    padding: 73px 20px;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1026px) {
+  .header__main-block {
+    display: none;
+  }
+  .header__video-block-inner {
+    padding: 30px;
+    right: 0;
+  }
+}
+@media screen and (max-width: 670px) {
+  .header__main {
+    width: 68%;
+  }
+  .header-nav {
+    width: 32%;
+  }
+  .header__text h1 {
+    font-size: 40px;
+    line-height: 60px;
+    color: burlywood;
+  }
+}
+@media screen and (max-width: 560px) {
+  .header__text h1 {
+    font-size: 32px;
+    line-height: 50px;
+    color: burlywood;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
