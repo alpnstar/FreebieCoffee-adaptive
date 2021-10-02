@@ -107,7 +107,7 @@ h2 {
 }
 .features__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(226px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(121px, auto));
   grid-gap: 20px;
 }
 .features__item-inner {

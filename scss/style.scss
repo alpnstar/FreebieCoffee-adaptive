@@ -86,7 +86,7 @@ h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family
     }
     &__list {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(226px,auto));
+        grid-template-columns: repeat(auto-fit,minmax(121px,auto));
         grid-gap: 20px;
     }
     &__item {
