@@ -7,6 +7,7 @@ body, html {
 
 body {
   font-family: Nunito;
+  background: #F2F2F2;
 }
 
 * {
@@ -26,15 +27,17 @@ h2 {
   font-family: "Montserrat";
 }
 
-.head {
+.title-wrapper {
+  text-align: center;
+}
+.title-wrapper .head {
   display: block;
   font-family: "Montserrat";
   font-weight: 900;
   font-size: 30px;
   margin-bottom: 80px;
 }
-
-.subhead {
+.title-wrapper .subhead {
   font-weight: 600;
   font-size: 20px;
 }
@@ -115,6 +118,42 @@ h2 {
 }
 .features__item-inner h3 {
   margin: 30px 0 13px 0;
+}
+
+.catalog-1 {
+  position: relative;
+}
+.catalog-1::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #415167;
+  width: 25%;
+  height: 100%;
+}
+.catalog-1__wrapper {
+  padding: 70px 0 124px 0;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.catalog-1__element-wrapper {
+  display: grid;
+  grid-gap: 29px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+}
+.catalog-1__item {
+  display: flex;
+  align-items: center;
+  background: white;
+  box-shadow: 0 0 20px -18px black;
+}
+.catalog-1__item-content-wrapper {
+  padding: 0 0 0 50px;
+}
+.catalog-1__item img {
+  background: #F2F2F2;
 }
 
 @media screen and (max-width: 1035px) {

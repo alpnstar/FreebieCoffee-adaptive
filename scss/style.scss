@@ -8,6 +8,7 @@ body,html {
 }
 body {
     font-family: Nunito;
+    background: #F2F2F2;
 }
 * {
     box-sizing: border-box;
@@ -16,8 +17,9 @@ body {
     outline: none;
 }
 h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family: 'Montserrat';}
+.title-wrapper{text-align: center; 
 .head {display:block;font-family: 'Montserrat'; font-weight: 900; font-size: 30px; margin-bottom: 80px;}
-.subhead {font-weight: 600; font-size: 20px;}
+.subhead {font-weight: 600; font-size: 20px;}}
 .header {
     height: 770px;
     // 
@@ -98,6 +100,47 @@ h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family
         }
     }
 }
+.catalog-1{
+    position: relative;
+    &::after {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: $primary;
+        width: 25%;
+        height: 100%;
+    }
+    &__wrapper {
+        padding: 70px 0 124px 0;
+        max-width: 1150px;
+        margin: 0 auto;
+
+    }
+    &__element-wrapper {
+        display: grid;
+        grid-gap: 29px;
+        grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        background: white;
+        box-shadow: 0 0 20px -18px black;
+        &-content-wrapper {
+            padding: 0 0 0 50px;
+        }
+        img {
+            background: #F2F2F2;
+        }
+    }
+}
+
+
+
+
+// MEDIA CONTENT
 @media screen and (max-width:1035px) {
     .header {
         &__main-block {
