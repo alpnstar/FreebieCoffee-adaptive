@@ -142,6 +142,7 @@ h2 {
   display: grid;
   grid-gap: 29px;
   grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  text-align: center;
 }
 .catalog-1__item {
   display: flex;
@@ -173,6 +174,19 @@ h2 {
   .header__video-block-inner {
     padding: 30px;
     right: 0;
+  }
+}
+@media screen and (max-width: 830px) {
+  .catalog-1::after {
+    display: none;
+  }
+  .catalog-1__item {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .catalog-1__item-content-wrapper {
+    padding: 0;
   }
 }
 @media screen and (max-width: 670px) {

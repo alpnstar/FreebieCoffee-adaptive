@@ -121,7 +121,8 @@ h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family
     &__element-wrapper {
         display: grid;
         grid-gap: 29px;
-        grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+        grid-template-columns: repeat(auto-fit, minmax(400px,auto));
+        text-align: center;
     }
     &__item {
         display: flex;
@@ -164,6 +165,21 @@ h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family
             &-inner {
                 padding: 30px;
                 right: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 830px) {
+    .catalog-1 {
+        &::after {
+            display: none;
+        }
+        &__item {
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            &-content-wrapper {
+                padding: 0;
             }
         }
     }
