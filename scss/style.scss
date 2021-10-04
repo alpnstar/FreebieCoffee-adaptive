@@ -17,6 +17,7 @@ body {
     outline: none;
 }
 h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family: 'Montserrat';}
+h3{font-size: 24px; font-weight: 700;}
 .title-wrapper{text-align: center; 
 .head {display:block;font-family: 'Montserrat'; font-weight: 900; font-size: 30px; margin-bottom: 80px;}
 .subhead {font-weight: 600; font-size: 20px;}}
@@ -100,6 +101,38 @@ h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family
         }
     }
 }
+.catalog {
+    &-price{
+        font-weight: 600;
+        font-size: 20px;
+        color: $accent;
+
+    }
+    &-head{
+        margin: 20px 0 0px 0;
+    }
+    &-info{
+        margin: 25px 0;
+    }
+    &-button-1{
+        border: none;
+        background: $accent;
+        color: white;
+        padding: 8px 17px;
+        border-radius: 30px;
+        &:hover {
+            color: $accent;
+            background: transparent;
+            box-shadow: 0 0 9px -2px black;
+        }
+    }
+    &-button-2{
+        border: none;
+        padding: 8px 17px 8px 27px;
+
+        background: transparent;
+    }
+}
 .catalog-1{
     position: relative;
     &::after {
@@ -122,13 +155,13 @@ h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family
         display: grid;
         grid-gap: 29px;
         grid-template-columns: repeat(auto-fit, minmax(400px,auto));
-        text-align: center;
     }
     &__item {
         display: flex;
         align-items: center;
         background: white;
         box-shadow: 0 0 20px -18px black;
+        color: #000000;
         &-content-wrapper {
             padding: 0 0 0 50px;
         }
@@ -137,7 +170,35 @@ h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family
         }
     }
 }
-
+.giftset {
+    padding: 0 0 125px 0;
+    background: $light-gray;
+    &__inner {
+        display: flex;
+        height: 460px;
+        background: white   ;
+        padding: 66px;
+        width: 1050px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 260px;
+            height: 100%;
+            background: $light-gray;
+            z-index: -1;
+        }
+        &-inner {
+            background: gray;
+            height: 331px;
+            width: 430px;
+        }
+    }
+}
 
 
 
@@ -174,6 +235,10 @@ h1 {font-size: 54px; font-weight: 900; font-family: 'Montserrat';}h2{font-family
         &::after {
             display: none;
         }
+        &__element-wrapper {
+            grid-template-columns: none;            
+        }
+
         &__item {
             display: block;
             width: fit-content;
