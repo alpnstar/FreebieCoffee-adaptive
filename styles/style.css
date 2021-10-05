@@ -160,8 +160,12 @@ h3 {
 .catalog-1:last-child::after {
   left: 75%;
 }
-.catalog-1:last-child .catalog-1 .catalog-price::after {
-  content: url("");
+.catalog-1:last-child .catalog-price::after {
+  content: "155.000";
+  margin-left: 10px;
+  font-size: 14px;
+  color: #415167;
+  text-decoration: line-through;
 }
 .catalog-1:last-child .catalog-1__element-wrapper {
   grid-template-columns: repeat(auto-fit, minmax(358px, auto));
@@ -282,7 +286,7 @@ h3 {
     right: 0;
   }
 }
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 931px) {
   .catalog-1::after {
     display: none;
   }
@@ -295,7 +299,7 @@ h3 {
     margin: 0 auto;
   }
   .catalog-1__item-content-wrapper {
-    padding: 0;
+    padding: 20px;
   }
 
   .giftset img {

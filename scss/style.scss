@@ -140,13 +140,18 @@ h3{font-size: 24px; font-weight: 700;}
             left: 75%;
             
         }
-        .catalog-1 {
-            
-            .catalog-price {
-                &::after {
-                    content: url('');
+        .catalog-price {
+                    &::after {
+                    content: '155.000';
+                    margin-left: 10px;
+                    font-size: 14px;
+                    color: $primary;
+                    text-decoration: line-through;
                 }
             }
+        .catalog-1 {
+            
+            
             &__element-wrapper{ 
                 grid-template-columns: repeat(auto-fit, minmax(358px,auto));
 
@@ -281,7 +286,7 @@ h3{font-size: 24px; font-weight: 700;}
         }
     }
 }
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 931px) {
     .catalog-1 {
         &::after {
             display: none;
@@ -290,12 +295,13 @@ h3{font-size: 24px; font-weight: 700;}
             grid-template-columns: none;            
         }
 
+
         &__item {
             display: block;
             width: fit-content;
             margin: 0 auto;
             &-content-wrapper {
-                padding: 0;
+                padding: 20px;
             }
         }
     }
