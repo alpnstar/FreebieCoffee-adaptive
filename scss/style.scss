@@ -135,6 +135,33 @@ h3{font-size: 24px; font-weight: 700;}
 }
 .catalog-1{
     position: relative;
+    &:last-child {
+        &::after {
+            left: 75%;
+            
+        }
+        .catalog-1 {
+            
+            .catalog-price {
+                &::after {
+                    content: url('');
+                }
+            }
+            &__element-wrapper{ 
+                grid-template-columns: repeat(auto-fit, minmax(358px,auto));
+
+            }
+            &__item {
+                display: block;
+                @media screen and (max-width: 1132px) {
+                    text-align: center;
+                }
+                &-content-wrapper {
+                    padding: 20px 20px;
+                }
+            }
+        }
+    }
     &::after {
         content: '';
         z-index: -1;
@@ -165,7 +192,7 @@ h3{font-size: 24px; font-weight: 700;}
         &-content-wrapper {
             padding: 0 0 0 50px;
         }
-        img {
+        &-img-wrapper {
             background: #F2F2F2;
         }
     }
