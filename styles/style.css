@@ -176,8 +176,18 @@ h3 {
 .catalog-1:last-child .catalog-1__element-wrapper {
   grid-template-columns: repeat(auto-fit, minmax(358px, auto));
 }
+@media screen and (max-width: 335px) {
+  .catalog-1:last-child .catalog-1__element-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
 .catalog-1:last-child .catalog-1__item {
   display: block;
+}
+.catalog-1:last-child .catalog-1__item-img-wrapper img {
+  width: 320px !important;
 }
 @media screen and (max-width: 1132px) {
   .catalog-1:last-child .catalog-1__item {
