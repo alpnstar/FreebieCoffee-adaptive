@@ -176,18 +176,12 @@ h3 {
 .catalog-1:last-child .catalog-1__element-wrapper {
   grid-template-columns: repeat(auto-fit, minmax(358px, auto));
 }
-@media screen and (max-width: 335px) {
-  .catalog-1:last-child .catalog-1__element-wrapper {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-  }
-}
 .catalog-1:last-child .catalog-1__item {
   display: block;
 }
 .catalog-1:last-child .catalog-1__item-img-wrapper img {
-  width: 320px !important;
+  width: 320px;
+  text-align: center;
 }
 @media screen and (max-width: 1132px) {
   .catalog-1:last-child .catalog-1__item {
@@ -229,6 +223,7 @@ h3 {
 }
 .catalog-1__item-img-wrapper {
   background: #F2F2F2;
+  text-align: center;
 }
 
 .giftset {
@@ -398,6 +393,16 @@ h3 {
   }
   .header__nav ul {
     display: none;
+  }
+}
+@media screen and (max-width: 335px) {
+  .catalog-1__element-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .catalog-1__item {
+    width: 100%;
   }
 }
 
