@@ -306,7 +306,7 @@ h3 {
   }
   .catalog-1__item {
     display: block;
-    width: fit-content;
+    width: 320px;
     margin: 0 auto;
   }
   .catalog-1__item-content-wrapper {
